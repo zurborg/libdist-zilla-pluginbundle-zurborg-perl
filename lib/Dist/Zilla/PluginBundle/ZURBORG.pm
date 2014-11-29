@@ -54,8 +54,6 @@ sub configure {
 		}],
 		['Git::Tag' => {
 		}],
-		['Git::Push' => {
-		}],
 		['Git::Contributors' => {
 		}],
 		['ContributorsFile' => {
