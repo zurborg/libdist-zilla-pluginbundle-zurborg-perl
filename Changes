@@ -1,5 +1,6 @@
 {{$NEXT}}
  - no automatic git-push
+ - runtime requirements
 
 0.001 2014-11-29
  - Initial release
