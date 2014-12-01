@@ -77,6 +77,7 @@ sub configure {
 		['Test::Perl::Critic' => {
 		}],
 		['Test::Kwalitee::Extra' => {
+		    arg => '!prereq_matches_use',
 		}],
 		['ExecDir' => {
 		}],
