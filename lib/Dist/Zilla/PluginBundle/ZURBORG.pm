@@ -95,6 +95,8 @@ sub configure {
 		}],
 		['UploadToCPAN' => {
 		}],
+		['PerlTidy' => {
+		}],
     );
 
     return;
