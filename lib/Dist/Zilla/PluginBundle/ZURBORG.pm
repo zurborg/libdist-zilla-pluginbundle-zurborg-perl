@@ -1,6 +1,8 @@
 use strict;
 use warnings;
+
 package Dist::Zilla::PluginBundle::ZURBORG;
+
 # ABSTRACT: dzil plugin bundle of ZURBORG
 
 use Moose;
@@ -16,87 +18,69 @@ Configuration of Dist::Zilla::PluginBundle::Easy
 =cut
 
 sub configure {
-	my $self = shift;
+    my $self = shift;
 
-	$self->add_plugins(
-		['GatherDir' => {
-		}],
-		['PruneCruft' => {
-		}],
-		['PruneFiles' => {
-			filename => 'README.md',
-		}],
-		['TravisYML' => {
-		}],
-		['MinimumPerl' => {
-		}],
-		['AutoPrereqs' => {
-		}],
-		['PreviousVersion::Changelog' => {
-		}],
-		['NextVersion::Semantic' => {
-			format => '%d.%03d',
-		}],
-		['PodWeaver' => {
-			config_plugin => '@ZURBORG',
-		}],
-		['OurPkgVersion' => {
-		}],
-		['NextRelease' => {
-			format => '%v %{yyyy-MM-dd}d'
-		}],
-		['GithubMeta' => {
-			issues => '1',
-		}],
-		['Git::Check' => {
-		}],
-		['Git::Commit' => {
-		}],
-		['Git::Tag' => {
-		}],
-		['Git::Contributors' => {
-		}],
-		['ContributorsFile' => {
-		}],
-		['ManifestSkip' => {
-		}],
-		['MetaYAML' => {
-		}],
-		['License' => {
-		}],
-		['Readme' => {
-		}],
-		['ExtraTests' => {
-		}],
-		['PodSyntaxTests' => {
-		}],
-		['PodCoverageTests' => {
-		}],
-		['Test::CPAN::Changes' => {
-		}],
-		['Test::Perl::Critic' => {
-		}],
-		['Test::Kwalitee::Extra' => {
-		    arg => '!prereq_matches_use',
-		}],
-		['ExecDir' => {
-		}],
-		['ShareDir' => {
-		}],
-		['Signature' => {
-		}],
-		['MakeMaker' => {
-		}],
-		['Manifest' => {
-		}],
-		['TestRelease' => {
-		}],
-		['ConfirmRelease' => {
-		}],
-		['UploadToCPAN' => {
-		}],
-		['PerlTidy' => {
-		}],
+    $self->add_plugins(
+        [ 'GatherDir'  => {} ],
+        [ 'PruneCruft' => {} ],
+        [
+            'PruneFiles' => {
+                filename => 'README.md',
+            }
+        ],
+        [ 'TravisYML'                  => {} ],
+        [ 'MinimumPerl'                => {} ],
+        [ 'AutoPrereqs'                => {} ],
+        [ 'PreviousVersion::Changelog' => {} ],
+        [
+            'NextVersion::Semantic' => {
+                format => '%d.%03d',
+            }
+        ],
+        [
+            'PodWeaver' => {
+                config_plugin => '@ZURBORG',
+            }
+        ],
+        [ 'OurPkgVersion' => {} ],
+        [
+            'NextRelease' => {
+                format => '%v %{yyyy-MM-dd}d'
+            }
+        ],
+        [
+            'GithubMeta' => {
+                issues => '1',
+            }
+        ],
+        [ 'Git::Check'          => {} ],
+        [ 'Git::Commit'         => {} ],
+        [ 'Git::Tag'            => {} ],
+        [ 'Git::Contributors'   => {} ],
+        [ 'ContributorsFile'    => {} ],
+        [ 'ManifestSkip'        => {} ],
+        [ 'MetaYAML'            => {} ],
+        [ 'License'             => {} ],
+        [ 'Readme'              => {} ],
+        [ 'ExtraTests'          => {} ],
+        [ 'PodSyntaxTests'      => {} ],
+        [ 'PodCoverageTests'    => {} ],
+        [ 'Test::CPAN::Changes' => {} ],
+        [ 'Test::Perl::Critic'  => {} ],
+        [
+            'Test::Kwalitee::Extra' => {
+                arg => '!prereq_matches_use',
+            }
+        ],
+        [ 'ExecDir'        => {} ],
+        [ 'ShareDir'       => {} ],
+        [ 'Signature'      => {} ],
+        [ 'MakeMaker'      => {} ],
+        [ 'Manifest'       => {} ],
+        [ 'TestRelease'    => {} ],
+        [ 'ConfirmRelease' => {} ],
+        [ 'UploadToCPAN'   => {} ],
+        [ 'PerlTidy'       => {} ],
     );
 
     return;
