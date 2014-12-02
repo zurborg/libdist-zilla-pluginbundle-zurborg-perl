@@ -4,6 +4,7 @@
  - no automatic git-push
  - runtime requirements
  - avoid network access
+ - add Perl::Tidy
 
  [API CHANGES]
 
