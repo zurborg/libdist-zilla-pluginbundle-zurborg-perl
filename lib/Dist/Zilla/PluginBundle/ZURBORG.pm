@@ -53,7 +53,7 @@ sub configure {
                 issues => '1',
             }
         ],
-        [ 'Git::Check'          => {} ],
+        [ 'Git::Check'          => { allow_dirty => '.travis.yml' } ],
         [ 'Git::Commit'         => {} ],
         [ 'Git::Tag'            => {} ],
         [ 'Git::Contributors'   => {} ],
