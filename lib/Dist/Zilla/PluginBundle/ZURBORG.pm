@@ -1,5 +1,4 @@
-use strict;
-use warnings;
+use strictures 2;
 
 package Dist::Zilla::PluginBundle::ZURBORG;
 
@@ -62,6 +61,7 @@ sub configure {
         [ 'MetaYAML'            => {} ],
         [ 'License'             => {} ],
         [ 'Readme'              => {} ],
+        [ 'CPANFile'            => {} ],
         [ 'ExtraTests'          => {} ],
         [ 'PodSyntaxTests'      => {} ],
         [ 'PodCoverageTests'    => {} ],
