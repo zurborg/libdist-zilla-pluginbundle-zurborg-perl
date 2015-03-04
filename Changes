@@ -1,11 +1,5 @@
 {{$NEXT}}
 
-0.002 2014-11-30
- - no automatic git-push
- - runtime requirements
- - avoid network access
- - add Perl::Tidy
-
  [API CHANGES]
 
  [BUG FIXES]
@@ -13,6 +7,14 @@
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
+
+ - switch to Git::GatherDir
+
+0.002 2014-11-30
+ - no automatic git-push
+ - runtime requirements
+ - avoid network access
+ - add Perl::Tidy
 
 0.001 2014-11-29
  - Initial release
