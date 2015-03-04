@@ -21,7 +21,7 @@ sub configure {
     my $self = shift;
 
     $self->add_plugins(
-        [ 'GatherDir'  => {} ],
+        [ 'Git::GatherDir'  => {} ],
         [ 'PruneCruft' => {} ],
         [
             'PruneFiles' => {
