@@ -1,5 +1,6 @@
 {{$NEXT}}
 
+0.003 2015-03-04
  [API CHANGES]
 
  [BUG FIXES]
@@ -7,8 +8,6 @@
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
-
- - switch to Git::GatherDir
 
 0.002 2014-11-30
  - no automatic git-push
