@@ -25,6 +25,7 @@ sub configure {
         [
             'PruneFiles' => {
                 filename => 'README.md',
+                match    => '^xt/',
             }
         ],
         [ 'TravisYML'                  => {} ],
