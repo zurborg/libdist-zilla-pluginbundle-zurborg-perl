@@ -47,7 +47,10 @@ sub configure {
             allow_dirty => '.travis.yml',
         },
         'Git::Commit' => {},
-        'Git::Tag' => {},
+        'Git::Tag' => {
+            tag_message => 'Released version %v',
+            signed => 1,
+        },
         'Git::Contributors' => {},
         'ContributorsFile' => {},
         'ManifestSkip' => {},
