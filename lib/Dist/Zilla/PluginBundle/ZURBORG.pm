@@ -20,7 +20,7 @@ sub configure {
     my $self = shift;
 
     my @plugins = (
-        -Git::GatherDir => {},
+        'Git::GatherDir' => {},
         'PruneCruft' => {},
         'PruneFiles' => {
             filename => 'README.md',
