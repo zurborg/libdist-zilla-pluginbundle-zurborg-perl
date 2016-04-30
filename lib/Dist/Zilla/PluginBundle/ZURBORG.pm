@@ -22,6 +22,9 @@ sub configure {
     my @plugins = (
         'Git::GatherDir' => {},
         'PruneCruft' => {},
+        'PruneFiles' => {
+            filename => 'dist.ini',
+        },
         'MinimumPerl' => {},
         'AutoPrereqs' => {},
         'PreviousVersion::Changelog' => {},
