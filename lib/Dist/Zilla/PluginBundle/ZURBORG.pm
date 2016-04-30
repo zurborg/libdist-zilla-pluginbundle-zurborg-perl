@@ -26,7 +26,6 @@ sub configure {
             filename => 'README.md',
             match    => '^xt/',
         },
-        'TravisYML' => {},
         'MinimumPerl' => {},
         'AutoPrereqs' => {},
         'PreviousVersion::Changelog' => {},
@@ -58,15 +57,7 @@ sub configure {
         'License' => {},
         'Readme' => {},
         'CPANFile' => {},
-        'Test::Compile' => {},
         'ExtraTests' => {},
-        'Test::CheckDeps' => {
-            fatal => 1,
-        },
-        'Test::NoTabs' => {},
-        'Test::EOL' => {},
-        'Test::Fixme' => {},
-        'Test::Inline' => {},
         'PodSyntaxTests' => {},
         'PodCoverageTests' => {},
         'Test::CPAN::Changes' => {},
@@ -77,12 +68,11 @@ sub configure {
         'ExecDir' => {},
         'ShareDir' => {},
         'Signature' => {},
-        'MakeMaker' => {},
+        'ModuleBuild' => {},
         'Manifest' => {},
         'TestRelease' => {},
         'ConfirmRelease' => {},
         'UploadToCPAN' => {},
-        'PerlTidy' => {},
     );
 
     for (0 .. $#plugins/2) {
