@@ -22,10 +22,6 @@ sub configure {
     my @plugins = (
         'Git::GatherDir' => {},
         'PruneCruft' => {},
-        'PruneFiles' => {
-            filename => 'README.md',
-            match    => '^xt/',
-        },
         'MinimumPerl' => {},
         'AutoPrereqs' => {},
         'PreviousVersion::Changelog' => {},
