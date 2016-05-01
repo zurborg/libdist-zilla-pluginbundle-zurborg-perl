@@ -72,6 +72,8 @@ sub configure {
         'TestRelease' => {},
         'ConfirmRelease' => {},
         'UploadToCPAN' => {},
+        'Git::Push' => {},
+        'GitHub::UploadRelease' => {},
     );
 
     for (0 .. $#plugins/2) {
