@@ -1,4 +1,5 @@
 {{$NEXT}}
+ - fix dependencies
 
 0.005 2016-05-01
  - more tests
